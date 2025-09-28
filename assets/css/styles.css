@@ -111,3 +111,15 @@ a:hover { color: var(--link-hover); }
   }
 }
 
+
+/* Mobile-only centering for heading and tagline */
+@media (max-width: 575.98px) {
+  .name {
+    text-align: center;
+    /* Increase spacing between the photo (above) and the heading on mobile */
+    margin-top: clamp(16px, 6vw, 28px);
+  }
+  .tagline {
+    text-align: center;
+  }
+}
